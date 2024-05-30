@@ -1,6 +1,8 @@
 @AbapCatalog.sqlViewName: 'Z_SD_SALES_O_ITM'
 @AbapCatalog.compiler.compareFilter: true
 --@AbapCatalog.preserveKey: true
+--ODATA Model Definition and ODATA Service Runtime is provided based on Service Adaption Description Language (SADL)
+@OData.publish: true --Creates Service Artifacts for ODATA Service
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Sales Order Item List'
 define view Z_SD_DDL_SALES_ORDER_ITEM as select from SEPM_I_SalesOrderItem_E as Item
